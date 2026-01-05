@@ -448,3 +448,45 @@ h1 { font-weight: 900 !important; letter-spacing: -0.025em; }
     border-left: 3px solid var(--am-primary);
     border-radius: 0 0.5rem 0.5rem 0;
 }
+
+/* Pagination Styling */
+.am-pagination .pagination {
+    margin-bottom: 0;
+    gap: 0.25rem;
+}
+
+.am-pagination .page-link {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--am-border) !important;
+    color: var(--am-text-muted) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem !important;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: none !important;
+}
+
+.am-pagination .page-link:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.am-pagination .page-item.active .page-link {
+    background-color: var(--am-primary) !important;
+    border-color: var(--am-primary) !important;
+    color: #000 !important;
+    box-shadow: 0 4px 12px rgba(171, 217, 7, 0.3) !important;
+}
+
+.am-pagination .page-item.disabled .page-link {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-color: var(--am-border) !important;
+    color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.am-pagination .page-link:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}

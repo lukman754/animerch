@@ -116,6 +116,18 @@
     </table>
 </div>
 
+<!-- Pagination Area -->
+@if($merchandise->hasPages())
+<div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--am-admin-surface); padding: 1rem 1.5rem; border-radius: 1rem; border: 1px solid var(--am-border);">
+    <div style="color: var(--am-text-muted); font-size: 0.875rem;">
+        Menampilkan <span style="color: white; font-weight: 600;">{{ $merchandise->firstItem() ?? 0 }}</span> - <span style="color: white; font-weight: 600;">{{ $merchandise->lastItem() ?? 0 }}</span> dari <span style="color: white; font-weight: 600;">{{ $merchandise->total() }}</span> produk
+    </div>
+    <div class="am-pagination">
+        {{ $merchandise->links() }}
+    </div>
+</div>
+@endif
+
 @if($merchandise->count() == 0)
     <div style="padding: 5rem; text-align: center; background: var(--am-admin-surface); border-radius: 1rem; border: 2px dashed var(--am-border); margin-top: 1rem;">
         <span class="material-symbols-outlined" style="font-size: 4rem; color: var(--am-text-muted); opacity: 0.2;">search_off</span>

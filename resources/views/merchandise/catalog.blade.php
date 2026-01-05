@@ -138,6 +138,13 @@
                 </div>
                 @endforeach
             </div>
+
+            <!-- Pagination Section -->
+            @if($merchandise->hasPages())
+            <div style="margin-top: 4rem; display: flex; justify-content: center;" class="am-pagination">
+                {{ $merchandise->links() }}
+            </div>
+            @endif
             @else
             <div style="padding: 5rem; text-align: center; background: var(--am-card); border-radius: 2rem; border: 2px dashed var(--am-border);">
                 <span class="material-symbols-outlined" style="font-size: 5rem; color: var(--am-text-muted); opacity: 0.2;">inventory_2</span>

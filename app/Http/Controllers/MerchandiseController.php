@@ -23,7 +23,7 @@ class MerchandiseController extends Controller
                   ->orWhere('event_terkait', 'like', "%{$search}%");
         }
 
-        $merchandise = $query->latest()->get();
+        $merchandise = $query->latest()->paginate(5)->withQueryString();
         return view('merchandise.index', compact('merchandise'));
     }
 
@@ -39,7 +39,7 @@ class MerchandiseController extends Controller
                   ->orWhere('deskripsi', 'like', "%{$search}%");
         }
 
-        $merchandise = $query->latest()->get();
+        $merchandise = $query->latest()->paginate(5)->withQueryString();
         return view('merchandise.catalog', compact('merchandise'));
     }
 
