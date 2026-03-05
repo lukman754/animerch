@@ -6,6 +6,13 @@
 - **Framework**: Laravel 12 + Bootstrap 5
 - **Fitur**: CRUD, Authentication, Export PDF, DataTables
 
+## Preview
+<img width="1921" height="2603" alt="screencapture-localhost-8000-2026-03-05-13_32_56" src="https://github.com/user-attachments/assets/a2b7c954-e567-4aac-a65a-4923fbdd9da8" /><img width="1921" height="1973" alt="screencapture-localhost-8000-catalog-2026-03-05-13_34_19" src="https://github.com/user-attachments/assets/eb74aa97-1afa-4633-9ee9-768d0ef23aa9" /><img width="1921" height="1176" alt="screencapture-localhost-8000-catalog-37-2026-03-05-13_34_52" src="https://github.com/user-attachments/assets/95d0aa23-4355-49b5-ab68-bba22580e55d" />
+<img width="1921" height="1089" alt="screencapture-localhost-8000-merchandise-2026-03-05-13_44_28" src="https://github.com/user-attachments/assets/26f9a767-f692-4485-81ba-4c8d330bddb8" />
+
+
+
+
 ## 🚀 Cara Menjalankan Aplikasi
 
 ### 1. Pastikan Laragon Sudah Running
