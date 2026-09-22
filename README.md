@@ -1,6 +1,8 @@
-# ANIMERCH - Merchandise Event Management System
+# AniMerch
 
-## 📋 Informasi Project
+Merchandise Event Management System untuk mengelola katalog, koleksi, dan data merchandise acara anime.
+
+## Informasi Proyek
 
 - **Nama Project**: AniMerch
 - **Database**: db_animerch
@@ -12,7 +14,7 @@
 <img width="1921" height="2603" alt="screencapture-localhost-8000-2026-03-05-13_32_56" src="https://github.com/user-attachments/assets/a2b7c954-e567-4aac-a65a-4923fbdd9da8" /><img width="1921" height="1973" alt="screencapture-localhost-8000-catalog-2026-03-05-13_34_19" src="https://github.com/user-attachments/assets/eb74aa97-1afa-4633-9ee9-768d0ef23aa9" /><img width="1921" height="1176" alt="screencapture-localhost-8000-catalog-37-2026-03-05-13_34_52" src="https://github.com/user-attachments/assets/95d0aa23-4355-49b5-ab68-bba22580e55d" />
 <img width="1921" height="1089" alt="screencapture-localhost-8000-merchandise-2026-03-05-13_44_28" src="https://github.com/user-attachments/assets/26f9a767-f692-4485-81ba-4c8d330bddb8" />
 
-## 🚀 Cara Menjalankan Aplikasi
+## Menjalankan Aplikasi
 
 ### Persyaratan
 
@@ -60,45 +62,45 @@ Email: admin@animerch.com
 Password: password
 ```
 
-## ✨ Fitur Lengkap
+## Fitur
 
-### 1. CRUD (Create, Read, Update, Delete) ✅
+### 1. CRUD (Create, Read, Update, Delete)
 
 - Tambah, Lihat, Edit, Hapus data merchandise
 - Upload gambar produk
 - Validasi input lengkap
 
-### 2. Authentication ✅
+### 2. Authentication
 
 - Login/Logout dengan Laravel Breeze
 - Proteksi halaman admin
 
-### 3. Export PDF ✅
+### 3. Export PDF
 
 - Laporan merchandise dalam PDF
 - Ringkasan total stok dan nilai
 
-### 4. DataTables ✅
+### 4. DataTables
 
 - Search, Sort, Pagination
 - Bahasa Indonesia
 
-### 5. Bootstrap 5 ✅
+### 5. Bootstrap 5
 
 - Responsive design
 - Custom color theme
 
-## 🎯 Cara Penggunaan
+## Penggunaan
 
-1. **Login**: Email: admin@animerch.com, Password: password
-2. **Tambah Data**: Klik "Tambah Data" → Isi form → Simpan
-3. **Edit**: Klik tombol kuning di tabel
-4. **Hapus**: Klik tombol merah di tabel
-5. **Export PDF**: Klik tombol "Export PDF"
+1. **Login**: Gunakan email `admin@animerch.com` dan password `password`.
+2. **Tambah Data**: Pilih "Tambah Data", isi formulir, lalu simpan.
+3. **Edit**: Pilih tombol edit pada data yang ingin diperbarui.
+4. **Hapus**: Pilih tombol hapus pada data yang ingin dihapus.
+5. **Export PDF**: Pilih tombol "Export PDF" untuk mengunduh laporan.
 
-## 📦 Data Sample
+## Data Contoh
 
-Sudah tersedia 10 data merchandise anime untuk testing!
+Tersedia 10 data merchandise anime untuk pengujian aplikasi.
 
 ---
 
