@@ -8,25 +8,52 @@
 - **Fitur**: CRUD, Authentication, Export PDF, DataTables
 
 ## Preview
+
 <img width="1921" height="2603" alt="screencapture-localhost-8000-2026-03-05-13_32_56" src="https://github.com/user-attachments/assets/a2b7c954-e567-4aac-a65a-4923fbdd9da8" /><img width="1921" height="1973" alt="screencapture-localhost-8000-catalog-2026-03-05-13_34_19" src="https://github.com/user-attachments/assets/eb74aa97-1afa-4633-9ee9-768d0ef23aa9" /><img width="1921" height="1176" alt="screencapture-localhost-8000-catalog-37-2026-03-05-13_34_52" src="https://github.com/user-attachments/assets/95d0aa23-4355-49b5-ab68-bba22580e55d" />
 <img width="1921" height="1089" alt="screencapture-localhost-8000-merchandise-2026-03-05-13_44_28" src="https://github.com/user-attachments/assets/26f9a767-f692-4485-81ba-4c8d330bddb8" />
 
-
-
-
 ## 🚀 Cara Menjalankan Aplikasi
 
-### 1. Pastikan Laragon Sudah Running
+### Persyaratan
 
-- Buka Laragon
-- Start All Services (Apache + MySQL)
+- PHP 8.2 atau lebih baru
+- Composer
+- Node.js dan npm
+- MySQL
 
-### 2. Akses Aplikasi
+### Instalasi
 
-- URL: http://127.0.0.1:8000
-- phpMyAdmin: http://localhost/phpmyadmin
+1. Clone repository dan masuk ke folder project.
+2. Install dependency PHP dan frontend:
 
-### 3. Login Credentials
+```bash
+composer install
+npm install
+```
+
+3. Buat file `.env` dari `.env.example`, lalu pastikan konfigurasi database mengarah ke `db_animerch`.
+4. Buat database `db_animerch` di MySQL. Gunakan `db_animerch.sql` untuk mengimpor data yang tersedia, atau jalankan migrasi dan seeder:
+
+```bash
+php artisan migrate --seed
+```
+
+5. Buat symbolic link untuk file upload dan build asset frontend:
+
+```bash
+php artisan storage:link
+npm run build
+```
+
+6. Jalankan aplikasi:
+
+```bash
+php artisan serve
+```
+
+Aplikasi tersedia di http://127.0.0.1:8000.
+
+### Login Demo
 
 ```
 Email: admin@animerch.com
